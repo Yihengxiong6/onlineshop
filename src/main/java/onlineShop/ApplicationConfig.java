@@ -27,11 +27,9 @@ public class ApplicationConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-                        // change to your own RDS_Endpoint
-                        // change the username and password
 		dataSource.setUrl("jdbc:mysql://jobproject-db.cncmzpfp8x1p.us-east-2.rds.amazonaws.com:3306/ecommerce?serverTimezone=UTC");
 		dataSource.setUsername("yihengx");
-		dataSource.setPassword("961022520xyh");
+		dataSource.setPassword("");
 
 		return dataSource;
 	}
